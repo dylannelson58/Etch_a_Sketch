@@ -48,10 +48,10 @@ Partial Class Etch_a_Sketch
         Me.UseToDrawToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NoActionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.QuicklySelectColorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.OptionsGroupBox = New System.Windows.Forms.GroupBox()
         CType(Me.DisplayPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
+        Me.OptionsGroupBox.SuspendLayout()
         Me.SuspendLayout()
         '
         'DisplayPictureBox
@@ -132,14 +132,14 @@ Partial Class Etch_a_Sketch
         '
         Me.MenusToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SelectColorToolStripMenuItem, Me.DrawWaveformsToolStripMenuItem, Me.ClearToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.MenusToolStripMenuItem.Name = "MenusToolStripMenuItem"
-        Me.MenusToolStripMenuItem.Size = New System.Drawing.Size(66, 24)
+        Me.MenusToolStripMenuItem.Size = New System.Drawing.Size(66, 26)
         Me.MenusToolStripMenuItem.Text = "Menus"
         '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LeftClickToolStripMenuItem, Me.RightClickToolStripMenuItem, Me.MiddleClickToolStripMenuItem})
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(55, 24)
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(55, 26)
         Me.HelpToolStripMenuItem.Text = "Help"
         '
         'LeftClickToolStripMenuItem
@@ -233,26 +233,25 @@ Partial Class Etch_a_Sketch
         Me.QuicklySelectColorToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.QuicklySelectColorToolStripMenuItem.Text = "Quickly select color"
         '
-        'GroupBox1
+        'OptionsGroupBox
         '
-        Me.GroupBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox1.Controls.Add(Me.SelectColorButton)
-        Me.GroupBox1.Controls.Add(Me.ClearButton)
-        Me.GroupBox1.Controls.Add(Me.DrawWaveformsButton)
-        Me.GroupBox1.Controls.Add(Me.ExitButton)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 490)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(978, 87)
-        Me.GroupBox1.TabIndex = 4
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "GroupBox1"
+        Me.OptionsGroupBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.OptionsGroupBox.Controls.Add(Me.SelectColorButton)
+        Me.OptionsGroupBox.Controls.Add(Me.ClearButton)
+        Me.OptionsGroupBox.Controls.Add(Me.DrawWaveformsButton)
+        Me.OptionsGroupBox.Controls.Add(Me.ExitButton)
+        Me.OptionsGroupBox.Location = New System.Drawing.Point(12, 490)
+        Me.OptionsGroupBox.Name = "OptionsGroupBox"
+        Me.OptionsGroupBox.Size = New System.Drawing.Size(978, 87)
+        Me.OptionsGroupBox.TabIndex = 4
+        Me.OptionsGroupBox.TabStop = False
         '
         'Etch_a_Sketch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1002, 602)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.OptionsGroupBox)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.DisplayPictureBox)
@@ -262,7 +261,7 @@ Partial Class Etch_a_Sketch
         CType(Me.DisplayPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        Me.GroupBox1.ResumeLayout(False)
+        Me.OptionsGroupBox.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -293,5 +292,5 @@ Partial Class Etch_a_Sketch
     Friend WithEvents NoActionToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents MiddleClickToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents QuicklySelectColorToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents OptionsGroupBox As GroupBox
 End Class
