@@ -84,7 +84,7 @@ Public Class Etch_a_Sketch
 
             Case e.Button.Middle
                 ColorDialog.ShowDialog()
-                penColor = ColorDialog.Color
+                Me.mainPen.Color = ColorDialog.Color
                 'Case Else
                 'MsgBox("Something went wrong")
         End Select
