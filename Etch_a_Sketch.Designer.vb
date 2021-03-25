@@ -30,6 +30,7 @@ Partial Class Etch_a_Sketch
         Me.DrawWaveformsButton = New System.Windows.Forms.Button()
         Me.SelectColorButton = New System.Windows.Forms.Button()
         Me.ExitButton = New System.Windows.Forms.Button()
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         CType(Me.DisplayPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -85,11 +86,21 @@ Partial Class Etch_a_Sketch
         Me.ExitButton.Text = "Exit"
         Me.ExitButton.UseVisualStyleBackColor = True
         '
+        'StatusStrip1
+        '
+        Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 426)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(800, 24)
+        Me.StatusStrip1.TabIndex = 2
+        Me.StatusStrip1.Text = "StatusStrip1"
+        '
         'Etch_a_Sketch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.ExitButton)
         Me.Controls.Add(Me.SelectColorButton)
         Me.Controls.Add(Me.DrawWaveformsButton)
@@ -99,6 +110,7 @@ Partial Class Etch_a_Sketch
         Me.Text = "Form1"
         CType(Me.DisplayPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -109,4 +121,5 @@ Partial Class Etch_a_Sketch
     Friend WithEvents SelectColorButton As Button
     Friend WithEvents ExitButton As Button
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
+    Friend WithEvents StatusStrip1 As StatusStrip
 End Class
